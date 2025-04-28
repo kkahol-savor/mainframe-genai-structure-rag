@@ -1,0 +1,17 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/display_test/display-test.cbl",
+  "program_id": "display-test",
+  "divisions": [
+    "IDENTIFICATION",
+    "PROCEDURE"
+  ],
+  "data_sections": {},
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    },
+    "goback": {
+      "statements": []
+    }
+  }
+}

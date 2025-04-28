@@ -1,0 +1,423 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sql/generated_sql_ex.cbl",
+  "program_id": "sql-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 5,
+        "name": "SQLSTATE",
+        "pic": "X(5)"
+      },
+      {
+        "level": 5,
+        "name": "FILLER",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQLVERSN",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "SQLCODE",
+        "pic": "S9(9)"
+      },
+      {
+        "level": 49,
+        "name": "SQLERRML",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 49,
+        "name": "SQLERRMC",
+        "pic": "X(486)"
+      },
+      {
+        "level": 5,
+        "name": "SQLERRD",
+        "pic": "S9(9)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-ARRSZ",
+        "pic": "S9(9)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-COUNT",
+        "pic": "S9(9)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-LEN",
+        "pic": "S9(9)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-TYPE",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQL-PREC",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQL-PREP",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQL-OPT",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQL-PARMS",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-STMLEN",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-STMT",
+        "pic": "X(99)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-PREP",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQL-OPT",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQL-PARMS",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-STMLEN",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-STMT",
+        "pic": "X(122)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-PREP",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQL-OPT",
+        "pic": "X"
+      },
+      {
+        "level": 5,
+        "name": "SQL-PARMS",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-STMLEN",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-STMT",
+        "pic": "X(177)"
+      },
+      {
+        "level": 5,
+        "name": "SQL-VAR-0001",
+        "pic": "S9(5)"
+      },
+      {
+        "level": 77,
+        "name": "ws-db-connection-string",
+        "pic": "x(1024)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-first-name",
+        "pic": "x(8)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-last-name",
+        "pic": "x(8)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-phone",
+        "pic": "x(10)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-address",
+        "pic": "x(22)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-is-enabled",
+        "pic": "x"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-create-dt",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-mod-dt",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "ws-search-value-len",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 5,
+        "name": "ws-search-value-text",
+        "pic": "x(50)"
+      },
+      {
+        "level": 1,
+        "name": "ws-num-accounts",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-first-name",
+        "pic": "x(8)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-last-name",
+        "pic": "x(8)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-phone",
+        "pic": "x(10)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-address",
+        "pic": "x(22)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-is-enabled",
+        "pic": "x"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-create-dt",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-mod-dt",
+        "pic": "x(20)"
+      },
+      {
+        "level": 1,
+        "name": "ws-menu-choice",
+        "pic": "x"
+      },
+      {
+        "level": 1,
+        "name": "ws-search-string",
+        "pic": "x(48)"
+      },
+      {
+        "level": 1,
+        "name": "ws-is-connected-sw",
+        "pic": "a"
+      },
+      {
+        "level": 1,
+        "name": "ws-search-again-sw",
+        "pic": "a"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 182
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 195
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 207
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 223
+        },
+        {
+          "type": "PERFORM",
+          "target": "forever",
+          "line": 226
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-all-accounts",
+          "line": 238
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-disabled-accounts",
+          "line": 241
+        },
+        {
+          "type": "PERFORM",
+          "target": "query-accounts",
+          "line": 244
+        }
+      ]
+    },
+    "display-all-accounts": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 286
+        },
+        {
+          "type": "PERFORM",
+          "target": "with",
+          "line": 291
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 342
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 359
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-account-results",
+          "line": 362
+        }
+      ]
+    },
+    "display-disabled-accounts": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 391
+        },
+        {
+          "type": "PERFORM",
+          "target": "with",
+          "line": 394
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 445
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 458
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-account-results",
+          "line": 460
+        }
+      ]
+    },
+    "query-accounts": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "until",
+          "line": 490
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 546
+        },
+        {
+          "type": "PERFORM",
+          "target": "with",
+          "line": 549
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 600
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 613
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-account-results",
+          "line": 615
+        }
+      ]
+    },
+    "display-account-results": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 644
+        }
+      ]
+    },
+    "check-sql-state": {
+      "statements": []
+    }
+  }
+}

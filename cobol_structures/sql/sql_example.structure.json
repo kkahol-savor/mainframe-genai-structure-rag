@@ -1,0 +1,286 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sql/sql_example.cbl",
+  "program_id": "sql-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 77,
+        "name": "ws-db-connection-string",
+        "pic": "x(1024)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-first-name",
+        "pic": "x(8)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-last-name",
+        "pic": "x(8)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-phone",
+        "pic": "x(10)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-address",
+        "pic": "x(22)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-is-enabled",
+        "pic": "x"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-create-dt",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "ws-sql-account-mod-dt",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "ws-search-value-len",
+        "pic": "S9(4)"
+      },
+      {
+        "level": 5,
+        "name": "ws-search-value-text",
+        "pic": "x(50)"
+      },
+      {
+        "level": 1,
+        "name": "ws-num-accounts",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-first-name",
+        "pic": "x(8)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-last-name",
+        "pic": "x(8)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-phone",
+        "pic": "x(10)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-address",
+        "pic": "x(22)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-is-enabled",
+        "pic": "x"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-create-dt",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "ws-account-mod-dt",
+        "pic": "x(20)"
+      },
+      {
+        "level": 1,
+        "name": "ws-menu-choice",
+        "pic": "x"
+      },
+      {
+        "level": 1,
+        "name": "ws-search-string",
+        "pic": "x(48)"
+      },
+      {
+        "level": 1,
+        "name": "ws-is-connected-sw",
+        "pic": "a"
+      },
+      {
+        "level": 1,
+        "name": "ws-search-again-sw",
+        "pic": "a"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    },
+    "END-EXEC": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 114
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 127
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 139
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 155
+        },
+        {
+          "type": "PERFORM",
+          "target": "forever",
+          "line": 158
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-all-accounts",
+          "line": 170
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-disabled-accounts",
+          "line": 173
+        },
+        {
+          "type": "PERFORM",
+          "target": "query-accounts",
+          "line": 176
+        }
+      ]
+    },
+    "display-all-accounts": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 208
+        },
+        {
+          "type": "PERFORM",
+          "target": "with",
+          "line": 213
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 226
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 241
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-account-results",
+          "line": 244
+        }
+      ]
+    },
+    "display-disabled-accounts": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 264
+        },
+        {
+          "type": "PERFORM",
+          "target": "with",
+          "line": 267
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 280
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 291
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-account-results",
+          "line": 293
+        }
+      ]
+    },
+    "query-accounts": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "until",
+          "line": 323
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 354
+        },
+        {
+          "type": "PERFORM",
+          "target": "with",
+          "line": 357
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 370
+        },
+        {
+          "type": "PERFORM",
+          "target": "check-sql-state",
+          "line": 381
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-account-results",
+          "line": 383
+        }
+      ]
+    },
+    "display-account-results": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 412
+        }
+      ]
+    },
+    "check-sql-state": {
+      "statements": []
+    }
+  }
+}

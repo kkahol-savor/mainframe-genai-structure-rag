@@ -1,0 +1,28 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/numval_test/numval_test.cbl",
+  "program_id": "numval-test",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-x-val",
+        "pic": "x(10)"
+      },
+      {
+        "level": 1,
+        "name": "ws-9-val",
+        "pic": "9(10)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    }
+  }
+}

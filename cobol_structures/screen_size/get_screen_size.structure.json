@@ -1,0 +1,58 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/screen_size/get_screen_size.cbl",
+  "program_id": "screen-size-test",
+  "divisions": [
+    "IDENTIFICATION",
+    "ENVIRONMENT",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-scr-lines-disp",
+        "pic": "zz9"
+      },
+      {
+        "level": 1,
+        "name": "ws-scr-cols-disp",
+        "pic": "zz9"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "3",
+          "line": 45
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-screens-size",
+          "line": 50
+        },
+        {
+          "type": "PERFORM",
+          "target": "3",
+          "line": 62
+        },
+        {
+          "type": "CALL",
+          "target": "CBL_GET_SCR_SIZE",
+          "line": 64
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-screens-size",
+          "line": 69
+        }
+      ]
+    },
+    "display-screens-size": {
+      "statements": []
+    }
+  }
+}

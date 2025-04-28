@@ -1,0 +1,80 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/report_writer/report_test.cbl",
+  "program_id": "report-test",
+  "divisions": [
+    "IDENTIFICATION",
+    "ENVIRONMENT",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "FILE": [
+      {
+        "level": 5,
+        "name": "f-test-student-id",
+        "pic": "9(6)"
+      },
+      {
+        "level": 5,
+        "name": "f-test-student-name",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "f-test-major",
+        "pic": "xxx"
+      },
+      {
+        "level": 5,
+        "name": "f-test-num-courses",
+        "pic": "99"
+      }
+    ],
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-eof-sw",
+        "pic": "a"
+      }
+    ],
+    "REPORT": [
+      {
+        "level": 5,
+        "name": "column",
+        "pic": "9(6)"
+      },
+      {
+        "level": 5,
+        "name": "column",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "column",
+        "pic": "xxx"
+      },
+      {
+        "level": 5,
+        "name": "column",
+        "pic": "99"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "until",
+          "line": 77
+        }
+      ]
+    },
+    "goback": {
+      "statements": []
+    },
+    "populate-input-file": {
+      "statements": []
+    }
+  }
+}

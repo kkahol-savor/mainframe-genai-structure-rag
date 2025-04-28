@@ -1,0 +1,26 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/accept/accept.cbl",
+  "program_id": "accept-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-input",
+        "pic": "x(16)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    },
+    "goback": {
+      "statements": []
+    }
+  }
+}

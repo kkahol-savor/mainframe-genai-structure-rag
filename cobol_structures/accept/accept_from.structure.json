@@ -1,0 +1,62 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/accept/accept_from.cbl",
+  "program_id": "accept-from-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-input",
+        "pic": "x(50)"
+      },
+      {
+        "level": 1,
+        "name": "ws-num-lines",
+        "pic": "x"
+      },
+      {
+        "level": 1,
+        "name": "ws-num-lines-disp",
+        "pic": "9(3)"
+      },
+      {
+        "level": 1,
+        "name": "ws-num-cols-disp",
+        "pic": "9(3)"
+      },
+      {
+        "level": 1,
+        "name": "ws-max-args",
+        "pic": "9(3)"
+      },
+      {
+        "level": 1,
+        "name": "ws-idx",
+        "pic": "9(3)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 65
+        },
+        {
+          "type": "CALL",
+          "target": "CBL_GET_SCR_SIZE",
+          "line": 165
+        }
+      ]
+    },
+    "goback": {
+      "statements": []
+    }
+  }
+}

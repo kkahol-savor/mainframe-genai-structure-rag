@@ -1,0 +1,240 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/display_timing/display_timing.cbl",
+  "program_id": "display-timing",
+  "divisions": [
+    "IDENTIFICATION",
+    "ENVIRONMENT",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-times-to-run",
+        "pic": "999"
+      },
+      {
+        "level": 1,
+        "name": "ws-times-to-refresh",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-start-hour",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-start-min",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-start-sec",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-start-milli",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-start-sec-calc",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-start-milli-calc",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-end-hour",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-end-min",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-end-sec",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-end-milli",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-end-sec-calc",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-end-milli-calc",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-diff-hour",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-diff-min",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-diff-sec",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-diff-milli",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-time-diff-hour-avg",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-time-diff-min-avg",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-time-diff-sec-avg",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-time-diff-milli-avg",
+        "pic": "999"
+      },
+      {
+        "level": 5,
+        "name": "ws-time-diff-sec-avg-disp",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "filler",
+        "pic": "x"
+      },
+      {
+        "level": 5,
+        "name": "ws-time-diff-milli-avg-disp",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-row-idx",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-col-idx",
+        "pic": "99"
+      },
+      {
+        "level": 1,
+        "name": "ws-accept",
+        "pic": "x"
+      },
+      {
+        "level": 1,
+        "name": "sys-call-val",
+        "pic": "9(13)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 90
+        },
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 95
+        },
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 100
+        },
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 102
+        },
+        {
+          "type": "PERFORM",
+          "target": "compute-and-display-diff",
+          "line": 113
+        },
+        {
+          "type": "PERFORM",
+          "target": "compute-and-display-average",
+          "line": 121
+        },
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 126
+        },
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 131
+        },
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 136
+        },
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 138
+        },
+        {
+          "type": "PERFORM",
+          "target": "compute-and-display-diff",
+          "line": 151
+        },
+        {
+          "type": "PERFORM",
+          "target": "compute-and-display-average",
+          "line": 157
+        }
+      ]
+    },
+    "goback": {
+      "statements": []
+    },
+    "compute-and-display-diff": {
+      "statements": []
+    },
+    "compute-and-display-average": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 200
+        }
+      ]
+    }
+  }
+}

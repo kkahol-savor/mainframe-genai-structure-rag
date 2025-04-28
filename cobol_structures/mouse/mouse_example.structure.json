@@ -1,0 +1,73 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/mouse/mouse_example.cbl",
+  "program_id": "mouse-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "ENVIRONMENT",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 5,
+        "name": "ws-cursor-line",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-cursor-col",
+        "pic": "99"
+      },
+      {
+        "level": 1,
+        "name": "ws-kb-input",
+        "pic": "x"
+      },
+      {
+        "level": 5,
+        "name": "ws-crt-key-1",
+        "pic": "xx"
+      },
+      {
+        "level": 5,
+        "name": "ws-crt-key-2",
+        "pic": "xx"
+      },
+      {
+        "level": 1,
+        "name": "ws-mouse-flags",
+        "pic": "9(4)"
+      },
+      {
+        "level": 1,
+        "name": "ws-mouse-clicked-sw",
+        "pic": "a"
+      },
+      {
+        "level": 1,
+        "name": "ws-exit-sw",
+        "pic": "a"
+      },
+      {
+        "level": 1,
+        "name": "ws-draw-color",
+        "pic": "9"
+      }
+    ]
+  },
+  "paragraphs": {
+    "end-compute": {
+      "statements": []
+    },
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "until",
+          "line": 75
+        }
+      ]
+    }
+  }
+}

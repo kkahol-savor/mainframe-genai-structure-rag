@@ -1,0 +1,38 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/comp_test/comp_test.cbl",
+  "program_id": "comp-conversion-test",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-comp-val",
+        "pic": "999"
+      },
+      {
+        "level": 1,
+        "name": "ws-disp-val",
+        "pic": "999"
+      },
+      {
+        "level": 1,
+        "name": "ws-dyn-disp-val",
+        "pic": "zz9"
+      },
+      {
+        "level": 1,
+        "name": "ws-input",
+        "pic": "999"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    }
+  }
+}

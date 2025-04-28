@@ -1,0 +1,86 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/redifines/redefines.cbl",
+  "program_id": "redefines-test",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-num-records",
+        "pic": "9"
+      },
+      {
+        "level": 5,
+        "name": "ws-customer-type",
+        "pic": "9"
+      },
+      {
+        "level": 10,
+        "name": "ws-customer-first-name",
+        "pic": "x(10)"
+      },
+      {
+        "level": 10,
+        "name": "ws-customer-last-name",
+        "pic": "x(20)"
+      },
+      {
+        "level": 5,
+        "name": "ws-corp-name",
+        "pic": "x(30)"
+      },
+      {
+        "level": 10,
+        "name": "ws-street-address",
+        "pic": "x(20)"
+      },
+      {
+        "level": 10,
+        "name": "ws-state",
+        "pic": "xx"
+      },
+      {
+        "level": 10,
+        "name": "ws-zip-code",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "ws-data-type",
+        "pic": "a"
+      },
+      {
+        "level": 5,
+        "name": "ws-data-disp-value",
+        "pic": "x(10)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "setup-test-data": {
+      "statements": []
+    },
+    "display-customer-data": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 75
+        }
+      ]
+    },
+    "end-perform": {
+      "statements": []
+    },
+    "setup-second-test-data": {
+      "statements": []
+    },
+    "display-second-test-data": {
+      "statements": []
+    }
+  }
+}

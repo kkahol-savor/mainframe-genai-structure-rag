@@ -1,0 +1,48 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/json_generate/json_generate.cbl",
+  "program_id": "json-generate-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-json-output",
+        "pic": "x(256)"
+      },
+      {
+        "level": 1,
+        "name": "ws-json-char-count",
+        "pic": "9(4)"
+      },
+      {
+        "level": 5,
+        "name": "ws-record-name",
+        "pic": "x(10)"
+      },
+      {
+        "level": 5,
+        "name": "ws-record-value",
+        "pic": "x(10)"
+      },
+      {
+        "level": 5,
+        "name": "ws-record-blank",
+        "pic": "x(10)"
+      },
+      {
+        "level": 5,
+        "name": "ws-record-flag",
+        "pic": "x(5)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/trim/trim.cbl",
+  "program_id": "trim-function-test",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-test-string-1",
+        "pic": "x(30)"
+      },
+      {
+        "level": 1,
+        "name": "ws-test-string-2",
+        "pic": "x(30)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    }
+  }
+}

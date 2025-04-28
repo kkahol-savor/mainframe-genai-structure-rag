@@ -1,0 +1,53 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/is_numeric/is_numeric.cbl",
+  "program_id": "is-numeric-test",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-user-input",
+        "pic": "x(10)"
+      },
+      {
+        "level": 1,
+        "name": "ws-user-input-justified",
+        "pic": "x(10)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "process-plain",
+          "line": 19
+        },
+        {
+          "type": "PERFORM",
+          "target": "process-zero-fill",
+          "line": 20
+        },
+        {
+          "type": "PERFORM",
+          "target": "process-trim",
+          "line": 21
+        }
+      ]
+    },
+    "process-plain": {
+      "statements": []
+    },
+    "process-zero-fill": {
+      "statements": []
+    },
+    "process-trim": {
+      "statements": []
+    }
+  }
+}

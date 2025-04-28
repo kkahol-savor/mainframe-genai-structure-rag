@@ -1,0 +1,55 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/sub.cbl",
+  "program_id": "sub-app",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-test-item-1",
+        "pic": "x(10)"
+      },
+      {
+        "level": 1,
+        "name": "ws-test-item-2",
+        "pic": "x(10)"
+      }
+    ],
+    "LOCAL-STORAGE": [
+      {
+        "level": 1,
+        "name": "ls-test-item-1",
+        "pic": "x(10)"
+      },
+      {
+        "level": 1,
+        "name": "ls-test-item-2",
+        "pic": "x(10)"
+      }
+    ],
+    "LINKAGE": [
+      {
+        "level": 1,
+        "name": "l-test-item-1",
+        "pic": "x(10)"
+      },
+      {
+        "level": 1,
+        "name": "l-test-item-2",
+        "pic": "x(10)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    },
+    "goback": {
+      "statements": []
+    }
+  }
+}

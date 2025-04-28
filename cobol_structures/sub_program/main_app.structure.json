@@ -1,0 +1,72 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/main_app.cbl",
+  "program_id": "main-app",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 5,
+        "name": "ws-item-1",
+        "pic": "x(10)"
+      },
+      {
+        "level": 5,
+        "name": "ws-item-2",
+        "pic": "x(10)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "display-message",
+          "line": 30
+        },
+        {
+          "type": "CALL",
+          "target": "sub-app",
+          "line": 35
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-message",
+          "line": 39
+        },
+        {
+          "type": "CALL",
+          "target": "of",
+          "line": 45
+        },
+        {
+          "type": "CALL",
+          "target": "sub-app",
+          "line": 47
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-message",
+          "line": 50
+        },
+        {
+          "type": "CALL",
+          "target": "sub-app",
+          "line": 57
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-message",
+          "line": 60
+        }
+      ]
+    },
+    "display-message": {
+      "statements": []
+    }
+  }
+}

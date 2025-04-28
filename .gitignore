@@ -1,0 +1,28 @@
+**/bin
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+env/
+venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+
+
+
+# VS Code settings
+.vscode/
+
+# MacOS specific files
+.DS_Store
+
+# Logs and temporary files
+*.log
+tmp/

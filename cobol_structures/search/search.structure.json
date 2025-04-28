@@ -1,0 +1,110 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/search/search.cbl",
+  "program_id": "search-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 5,
+        "name": "ws-item-id-1",
+        "pic": "9(4)"
+      },
+      {
+        "level": 5,
+        "name": "ws-item-id-2",
+        "pic": "9(4)"
+      },
+      {
+        "level": 5,
+        "name": "ws-item-id-3",
+        "pic": "9(4)"
+      },
+      {
+        "level": 5,
+        "name": "ws-item-name",
+        "pic": "x(16)"
+      },
+      {
+        "level": 10,
+        "name": "ws-item-year",
+        "pic": "9(4)"
+      },
+      {
+        "level": 10,
+        "name": "filler",
+        "pic": "x"
+      },
+      {
+        "level": 10,
+        "name": "ws-item-month",
+        "pic": "99"
+      },
+      {
+        "level": 10,
+        "name": "filler",
+        "pic": "x"
+      },
+      {
+        "level": 10,
+        "name": "ws-item-day",
+        "pic": "99"
+      },
+      {
+        "level": 5,
+        "name": "ws-no-key-id",
+        "pic": "9(4)"
+      },
+      {
+        "level": 5,
+        "name": "ws-no-key-value",
+        "pic": "x(25)"
+      },
+      {
+        "level": 1,
+        "name": "ws-accept-id-1",
+        "pic": "9(4)"
+      },
+      {
+        "level": 1,
+        "name": "ws-accept-id-2",
+        "pic": "9(4)"
+      },
+      {
+        "level": 1,
+        "name": "ws-accept-id-3",
+        "pic": "9(4)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "setup-test-data",
+          "line": 48
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-found-item",
+          "line": 65
+        },
+        {
+          "type": "PERFORM",
+          "target": "display-found-item",
+          "line": 88
+        }
+      ]
+    },
+    "display-found-item": {
+      "statements": []
+    },
+    "setup-test-data": {
+      "statements": []
+    }
+  }
+}

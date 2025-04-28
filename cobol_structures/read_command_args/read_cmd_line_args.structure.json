@@ -1,0 +1,28 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/read_command_args/read_cmd_line_args.cbl",
+  "program_id": "read-cmd-line-args",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-cmd-args",
+        "pic": "x(256)"
+      },
+      {
+        "level": 1,
+        "name": "ws-test-arg-count",
+        "pic": "9(3)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": []
+    }
+  }
+}

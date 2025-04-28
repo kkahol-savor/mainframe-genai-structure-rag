@@ -1,0 +1,44 @@
+[
+  {
+    "from_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/screen_size/get_screen_size.cbl",
+    "from_paragraph": "main-procedure",
+    "line": 64,
+    "to_program": "CBL_GET_SCR_SIZE",
+    "to_file": null
+  },
+  {
+    "from_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/accept/accept_from.cbl",
+    "from_paragraph": "main-procedure",
+    "line": 165,
+    "to_program": "CBL_GET_SCR_SIZE",
+    "to_file": null
+  },
+  {
+    "from_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/main_app.cbl",
+    "from_paragraph": "main-procedure",
+    "line": 35,
+    "to_program": "sub-app",
+    "to_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/sub.cbl"
+  },
+  {
+    "from_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/main_app.cbl",
+    "from_paragraph": "main-procedure",
+    "line": 45,
+    "to_program": "of",
+    "to_file": null
+  },
+  {
+    "from_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/main_app.cbl",
+    "from_paragraph": "main-procedure",
+    "line": 47,
+    "to_program": "sub-app",
+    "to_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/sub.cbl"
+  },
+  {
+    "from_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/main_app.cbl",
+    "from_paragraph": "main-procedure",
+    "line": 57,
+    "to_program": "sub-app",
+    "to_file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/sub_program/sub.cbl"
+  }
+]

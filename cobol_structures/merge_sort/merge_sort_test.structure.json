@@ -1,0 +1,208 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/merge_sort/merge_sort_test.cbl",
+  "program_id": "merge-sort-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "ENVIRONMENT",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "FILE": [
+      {
+        "level": 5,
+        "name": "f-customer-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-last-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-first-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-contract-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-comment",
+        "pic": "x(25)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-last-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-first-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-contract-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-comment",
+        "pic": "x(25)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-last-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-first-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-contract-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-comment",
+        "pic": "x(25)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-last-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-first-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-contract-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-comment",
+        "pic": "x(25)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-last-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-first-name",
+        "pic": "x(50)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-contract-id",
+        "pic": "9(5)"
+      },
+      {
+        "level": 5,
+        "name": "f-customer-comment",
+        "pic": "x(25)"
+      }
+    ],
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-fs-status-1",
+        "pic": "xx"
+      },
+      {
+        "level": 1,
+        "name": "ws-fs-status-2",
+        "pic": "xx"
+      },
+      {
+        "level": 1,
+        "name": "ws-fs-status-merge",
+        "pic": "xx"
+      },
+      {
+        "level": 1,
+        "name": "ws-fs-status-sorted",
+        "pic": "xx"
+      },
+      {
+        "level": 1,
+        "name": "ws-eof-sw",
+        "pic": "x"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "create-test-data",
+          "line": 92
+        },
+        {
+          "type": "PERFORM",
+          "target": "merge-and-display-files",
+          "line": 94
+        },
+        {
+          "type": "PERFORM",
+          "target": "sort-and-display-file",
+          "line": 96
+        }
+      ]
+    },
+    "merge-and-display-files": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "until",
+          "line": 123
+        }
+      ]
+    },
+    "sort-and-display-file": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "until",
+          "line": 158
+        }
+      ]
+    },
+    "create-test-data": {
+      "statements": []
+    }
+  }
+}

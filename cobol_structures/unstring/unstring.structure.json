@@ -1,0 +1,107 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/unstring/unstring.cbl",
+  "program_id": "unstring-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-source-str",
+        "pic": "x(30)"
+      },
+      {
+        "level": 5,
+        "name": "ws-part-1",
+        "pic": "x(15)"
+      },
+      {
+        "level": 5,
+        "name": "ws-part-2",
+        "pic": "x(15)"
+      },
+      {
+        "level": 1,
+        "name": "ws-delimiter",
+        "pic": "x"
+      },
+      {
+        "level": 5,
+        "name": "ws-single-fields-filled",
+        "pic": "99"
+      },
+      {
+        "level": 10,
+        "name": "ws-single-dest-str",
+        "pic": "x(5)"
+      },
+      {
+        "level": 10,
+        "name": "ws-single-delimiter",
+        "pic": "x"
+      },
+      {
+        "level": 10,
+        "name": "ws-single-char-count",
+        "pic": "9"
+      },
+      {
+        "level": 5,
+        "name": "ws-multi-fields-filled",
+        "pic": "99"
+      },
+      {
+        "level": 10,
+        "name": "ws-multi-dest-str",
+        "pic": "x(5)"
+      },
+      {
+        "level": 10,
+        "name": "ws-multi-delimiter",
+        "pic": "x"
+      },
+      {
+        "level": 10,
+        "name": "ws-multi-char-count",
+        "pic": "9"
+      },
+      {
+        "level": 1,
+        "name": "ws-pointer",
+        "pic": "9(5)"
+      },
+      {
+        "level": 1,
+        "name": "ws-dest-num",
+        "pic": "999"
+      }
+    ]
+  },
+  "paragraphs": {
+    "main-procedure": {
+      "statements": [
+        {
+          "type": "PERFORM",
+          "target": "2",
+          "line": 90
+        },
+        {
+          "type": "PERFORM",
+          "target": "until",
+          "line": 153
+        },
+        {
+          "type": "PERFORM",
+          "target": "varying",
+          "line": 216
+        }
+      ]
+    },
+    "goback": {
+      "statements": []
+    }
+  }
+}

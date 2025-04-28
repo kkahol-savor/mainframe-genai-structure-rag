@@ -1,0 +1,23 @@
+{
+  "file": "/Users/kanavkahol/work/COBOL-Examples/cobol_examples/read_command_args/read_specific_cmd_line_args.cbl",
+  "program_id": "cmd-args-example",
+  "divisions": [
+    "IDENTIFICATION",
+    "DATA",
+    "PROCEDURE"
+  ],
+  "data_sections": {
+    "WORKING-STORAGE": [
+      {
+        "level": 1,
+        "name": "ws-cmd-args",
+        "pic": "x(99)"
+      }
+    ]
+  },
+  "paragraphs": {
+    "end-perform": {
+      "statements": []
+    }
+  }
+}
